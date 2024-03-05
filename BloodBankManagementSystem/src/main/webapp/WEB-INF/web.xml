@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>adminLoginAction</servlet-name>
+  	<display-name>adminLoginAction</display-name>
+  	<description></description>
+  	<servlet-class>Project.adminLoginAction</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>adminLogout</servlet-name>
+  	<display-name>adminLogout</display-name>
+  	<description></description>
+  	<servlet-class>Project.adminLogout</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>hospitalLoginAction</servlet-name>
+  	<display-name>hospitalLoginAction</display-name>
+  	<description></description>
+  	<servlet-class>Project.hospitalLoginAction</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>hospitalLogoutAction</servlet-name>
+  	<display-name>hospitalLogoutAction</display-name>
+  	<description></description>
+  	<servlet-class>Project.hospitalLogoutAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>adminLoginAction</servlet-name>
+  	<url-pattern>/adminLoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>adminLogout</servlet-name>
+  	<url-pattern>/adminLogout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>hospitalLoginAction</servlet-name>
+  	<url-pattern>/hospitalLoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>hospitalLogoutAction</servlet-name>
+  	<url-pattern>/hospitalLogoutAction</url-pattern>
+  </servlet-mapping>
+</web-app>

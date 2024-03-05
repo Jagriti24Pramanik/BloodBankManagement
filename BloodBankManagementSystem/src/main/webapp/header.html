@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(129, 10, 31);
+}
+ul button {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(129, 10, 31);
+  font-family: inherit;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+li button {
+  
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li button:last-child {
+  border-right: none;
+  font-family: inherit;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} 
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+li button {
+  display: block ;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border : none;
+  border-left: 1px solid white;
+  
+} 
+
+li button:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.topnav .active {
+  background-color: dodgerblue;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+<ul><div class="topnav" id="myTopnav">
+  <li><a href="home.jsp">Home</a></li>
+  <li><a href="editDeleteList.jsp">Donor Details</a></li>
+  <li><a href="applicantRequest.jsp">Online Donor Application</a>
+  <li><a href="applicantRequestComplete.jsp">Accepted Online Application</a></li>
+  <li><a href="manageStock.jsp">Manage Stock</a></li>
+  <li><a href="requestForBlood.jsp">Looking for Blood</a></li>
+  <li><a href="requestCompleted.jsp">Accepted Blood Request</a></li> 
+  <li style="float:right"><form action="adminLogout" method="Post"><button type="submit">Logout</button></form></li>
+  </div>
+</ul>
+
+</body>
+</html>
